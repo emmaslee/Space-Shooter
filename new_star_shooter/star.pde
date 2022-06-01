@@ -1,9 +1,4 @@
-class Star {
-  
-  //Instance variables
-  float x, y, vx, vy, size;
-  color c;
-  int lives;
+class Star extends GameObject{
 
 
   Star() {
@@ -18,15 +13,8 @@ class Star {
   }
   //behaviour
   void act() {
-    x = x + vx;
-    y = y + vy;
+    super.act();
     if (y > height) lives = 0;
-  }
-  
-  void show() {
-    fill(c);
-    square(x, y, size);
-    
   }
   
  

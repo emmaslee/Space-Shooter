@@ -1,17 +1,17 @@
 void game() {
-  stars.add(new Star());
+  objects.add(0, new Star());
   background(0);
 
   int i = 0;
-  while (i < stars.size()) {
-    Star s = stars.get(i);
+  while (i < objects.size()) {
+    GameObject s = objects.get(i);
     s.act();
     s.show();
     if (s.lives == 0) {
-      stars.remove(i);
+      objects.remove(i);
     } else {
     i++;
-  }
+    }
   }
   
   //fill(255);

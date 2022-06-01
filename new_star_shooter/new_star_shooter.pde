@@ -7,8 +7,8 @@ int mode;
 
 boolean up, down, left, right, space;
 
-ArrayList<Star> stars;
-
+ArrayList<GameObject> objects;
+Starfighter player1;
 
 //==============================================================
 
@@ -16,7 +16,9 @@ void setup() {
   size (800, 800);
   mode = INTRO;
   
-  stars = new ArrayList<Star>();
+  objects = new ArrayList<GameObject>();
+  player1 = new Starfighter();
+  objects.add(player1);
 }
 
 //================================================================
