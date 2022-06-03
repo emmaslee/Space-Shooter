@@ -7,20 +7,20 @@ void gameover() {
    
     //Return to Game button
   //tactile - Return to Game button
-  if (mouseX > 300 && mouseX < 500 && mouseY > 400 && mouseY < 500) {
+  if (mouseX > 300 && mouseX < 500 && mouseY > 350 && mouseY < 450) {
     fill(200);
   } else {
     fill(146, 240, 140);
   }
-  rect(300, 400, 200, 100);
+  rect(400, 400, 200, 100);
   fill(0);
   textSize(30);
-  text("RETURN", 340, 460); 
+  text("RETURN", 340, 410); 
 
 }
 
 void gameoverClicks() {
-   if (mouseX > 300 && mouseX < 500 && mouseY > 400 && mouseY < 500) {
+   if (mouseX > 300 && mouseX < 500 && mouseY > 350 && mouseY < 450) {
     setup();
    }
 }

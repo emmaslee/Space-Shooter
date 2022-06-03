@@ -1,13 +1,13 @@
 class Bullet extends GameObject {
   
   Bullet() {
-    
+    super(player1.x, player1.y, 0, -10, 5, #FF0000, 1);
     
   }
   
   void act() {
     super.act();
-   //if (), dont let it go off the screen code
+    if (x < 0 || x> width || y < 0 || y > height) lives = 0;
   }
   
 }

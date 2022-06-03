@@ -5,6 +5,12 @@ final int GAMEOVER  = 2;
 final int PAUSE     = 3;
 int mode;
 
+//pallette
+color red    = #e63946;
+color dblue  = #1d3557;
+color lblue  = #f1faee;
+color yellow = #fdca40;
+
 boolean up, down, left, right, space;
 
 ArrayList<GameObject> objects;
@@ -15,6 +21,8 @@ Starfighter player1;
 void setup() {
   size (800, 800);
   mode = INTRO;
+  rectMode(CENTER);
+  noStroke();
   
   objects = new ArrayList<GameObject>();
   player1 = new Starfighter();

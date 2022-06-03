@@ -1,10 +1,12 @@
 void game() {
   objects.add(0, new Star());
-  background(0);
+  objects.add(new Enemy());
+  fill(dblue, 100);
+  rect(width/2, height/2, width, height);
 
   int i = 0;
   while (i < objects.size()) {
-    GameObject s = objects.get(i);
+    GameObject s = objects.get(i);     
     s.act();
     s.show();
     if (s.lives == 0) {
