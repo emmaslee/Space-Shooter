@@ -14,6 +14,7 @@ color yellow = #fdca40;
 boolean up, down, left, right, space;
 
 ArrayList<GameObject> objects;
+
 Starfighter player1;
 
 //==============================================================

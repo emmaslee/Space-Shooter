@@ -1,25 +1,36 @@
 void game() {
-  objects.add(0, new Star());
-  objects.add(new Enemy());
-  fill(dblue, 100);
+  fill(0, 100);
   rect(width/2, height/2, width, height);
+  addObjects();
+  gameEngine();
+  debug();
+}
 
-  int i = 0;
+void addObjects() {
+  objects.add(0, new Star());
+  
+  if (frameCount % 30 == 0) objects.add(new Enemy());
+}
+
+void gameEngine() {
+   int i = 0;
   while (i < objects.size()) {
-    GameObject s = objects.get(i);     
-    s.act();
-    s.show();
-    if (s.lives == 0) {
+    GameObject obj = objects.get(i);     
+    obj.act();
+    obj.show();
+    if (obj.lives == 0) {
       objects.remove(i);
     } else {
     i++;
     }
-  }
-  
-  //fill(255);
-  //text(frameRate, 20, 20);
-  //text(stars.size(), 20, 40);
+  }  
 }
+
+void debug() {
+  text(frameRate, 20, 20);
+  text(objects.size(), 20, 40);
+}
+
 
 void gameClicks() {
   mode = GAMEOVER;
