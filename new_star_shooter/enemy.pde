@@ -9,9 +9,7 @@ class Enemy extends GameObject {
     
     //shoot
     objects.add(new EnemyBullet(x, y, 0, 10));
-    objects.add(new EnemyBullet(x, y, 10, 0));
-    objects.add(new EnemyBullet(x, y, 0, -10));
-    objects.add(new EnemyBullet(x, y, -10, 0));
+    
     
     //collisions
     int i = 0;

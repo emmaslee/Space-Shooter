@@ -4,7 +4,7 @@ class Starfighter extends GameObject {
   
   Starfighter() {
     super(width/2, height/2, 0, 0, 40, red, 3);
-    threshold = 20;
+    threshold = 10;
     cooldown = threshold;
   }
   
