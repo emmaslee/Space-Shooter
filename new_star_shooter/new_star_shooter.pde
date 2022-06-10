@@ -1,4 +1,4 @@
-//GLOBAL VARiABLES
+  //GLOBAL VARiABLES
 final int INTRO     = 0;
 final int GAME      = 1;
 final int GAMEOVER  = 2;
