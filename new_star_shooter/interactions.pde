@@ -14,9 +14,9 @@ void keyReleased() {
   if (keyCode == ' ') space = false;
 }
 
-void mousePressed() {
-  if      (mode == INTRO)  introClicks();
-  else if (mode == GAME)   gameClicks();
-  else if (mode == GAMEOVER)   gameoverClicks();
-  else if (mode == PAUSE)   pauseClicks();
-}
+//void mousePressed() {
+//  if      (mode == INTRO)  introClicks();
+//  else if (mode == GAME)   gameClicks();
+//  else if (mode == GAMEOVER)   gameoverClicks();
+//  else if (mode == PAUSE)   pauseClicks();
+//}

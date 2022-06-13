@@ -8,10 +8,10 @@ void game() {
   //pause button
   stroke(0);
   fill(200);
-  rect(50, 700, 150, 80);
+  rect(750, 750, 80, 80);
   fill(0);
   textSize(50);
-  text( "||" , 110, 760);
+  text( "||" , 730, 760);
 }
 
 void addObjects() {
@@ -43,7 +43,7 @@ void debug() {
 void gameClicks() {
   
   
-   if (mouseX > 50 && mouseX < 200 && mouseY > 700 && mouseY < 780) {
+   if (mouseX > 710 && mouseX < 790 && mouseY > 710 && mouseY < 790) {
     mode = PAUSE;
   }
 }
