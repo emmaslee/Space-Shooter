@@ -18,6 +18,12 @@ void addObjects() {
   objects.add(0, new Star());
   
   if (frameCount % 30 == 0) objects.add(new Enemy());
+  if (frameCount % 30 == 0) objects.add(new EnemyB());
+  if (frameCount % 200 == 0) objects.add(new EnemyC());
+  if (bossspawn == 2) {
+    objects.add(new EnemyD());
+    bossspawn = 0;
+  }
 }
 
 void gameEngine() {

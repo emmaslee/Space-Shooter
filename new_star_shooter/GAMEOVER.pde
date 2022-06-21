@@ -2,7 +2,7 @@ void gameover() {
   background(0);
    textSize(80);
     fill(255);
-    text("GAMEOVER", 180, 320);
+    text("YOU LOSE", 180, 320);
    
    
     //Return to Game button

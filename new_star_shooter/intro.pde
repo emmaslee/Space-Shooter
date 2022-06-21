@@ -7,9 +7,12 @@ void intro() {
   textSize(72);
   text("STAR SHOOTER", 160, 300);
   
+  image(coolship , 550, 400, 180, 180);
+  image(coolship , 70, 400, 180, 180);
+  
+  
   //Start Button
   //Tactile
-  
   if (mouseX > 300 && mouseX < 500 && mouseY > 450 && mouseY < 550) {
     fill(200);
   } else {
