@@ -4,20 +4,29 @@ final int GAME      = 1;
 final int GAMEOVER  = 2;
 final int PAUSE     = 3;
 int mode;
-int shipLives, bossspawn;
+int bossspawn;
 int thickness;
+int time;
+int score, lives;
+int gunMode;
+
 //variables for target options
 PImage coolship;
 PImage bship;
 PImage gship;
 PImage pship;
+PImage greyship;
 PImage selectedImage;
+PImage background;
+PImage bground;
+PImage galaxy;
 
 //pallette
 color red    = #e63946;
 color dblue  = #1d3557;
 color lblue  = #f1faee;
 color yellow = #fdca40;
+color green  = #1AFA0F;
 
 boolean up, down, left, right, space;
 
@@ -33,6 +42,7 @@ void setup() {
   selectedImage = bship;
   rectMode(CENTER);
   noStroke();
+  lives = 3;
   
   objects = new ArrayList<GameObject>();
   player1 = new Starfighter();
@@ -43,6 +53,10 @@ void setup() {
  bship = loadImage("bspaceship.png"); 
  gship = loadImage("gspaceship.png"); 
  pship = loadImage("pspaceship.png"); 
+ greyship = loadImage("greyship.png"); 
+  background = loadImage("space.png"); 
+  bground = loadImage("bground.png");
+  galaxy = loadImage("galaxy.png");
  
  selectedImage = bship;
  

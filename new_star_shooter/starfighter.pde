@@ -46,4 +46,9 @@ class Starfighter extends GameObject {
         lives = 3;
       }
   }
+  void show() {
+     imageMode(CENTER);
+  image(bship, x, y, 100, 100);
+  
+  }
 }

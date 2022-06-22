@@ -5,6 +5,11 @@ void game() {
   gameEngine();
   debug(); 
   
+  fill(0);
+  textSize(40);
+  text("Score: " + score, width/2, 50);
+  text("Lives: " + lives, width/2, 100);
+  
   //pause button
   stroke(0);
   fill(200);
@@ -38,11 +43,17 @@ void gameEngine() {
     i++;
     }
   }  
+ 
 }
 
 void debug() {
-  text(frameRate, 20, 20);
-  text(objects.size(), 20, 40);
+  //fill(255);
+ // text(frameRate, 17, 20);
+ // text(objects.size(), 20, 40);
+ // println(bossspawn);
+  //text("Lives: " + player1.lives,width-40,20);
+  //text("Time Alive " + time,width-80,40);
+  
 }
 
 

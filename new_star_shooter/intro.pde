@@ -1,5 +1,5 @@
 void intro() {
-  background(37, 30, 57);
+  background(galaxy);
    
    // Game Title
   strokeWeight(1);
@@ -7,8 +7,8 @@ void intro() {
   textSize(72);
   text("STAR SHOOTER", 160, 300);
   
-  image(coolship , 550, 400, 180, 180);
-  image(coolship , 70, 400, 180, 180);
+  image(greyship , 550, 400, 180, 180);
+  image(greyship , 70, 400, 180, 180);
   
   
   //Start Button
@@ -16,10 +16,10 @@ void intro() {
   if (mouseX > 300 && mouseX < 500 && mouseY > 450 && mouseY < 550) {
     fill(200);
   } else {
-    fill(55, 92, 100);
+    fill(#390910);
   }
   rect(400, 500, 200, 100);
-  fill(0);
+  fill(255);
   textSize(30);
   text("START", 350, 510);
 }

@@ -2,7 +2,7 @@ class EnemyB extends GameObject {
 
 float cooldown, threshold;
 EnemyB() {
-  super(width+50, random(height), random(-3,-1),random(-1), 100,#fdca40, 5);
+  super(width+50, random(height), random(-3,-1),random(-1), 100,dblue, 5);
     cooldown = 0;
     threshold = 100;
 }
@@ -10,13 +10,15 @@ EnemyB() {
 void act() {
   
   super.act();
+  
     //shoot
     cooldown++;
     if (cooldown == threshold) {
       objects.add(new EnemyBullet(x+50, y+50, 5, 5));
       objects.add(new EnemyBullet(x-50, y+50, -5, 5));
-      objects.add(new EnemyBullet(x+50, y-50, 5, -5));
-      objects.add(new EnemyBullet(x-50, y-50, -5, -5));
+      
+      //objects.add(new EnemyBullet(x+50, y-50, 5, -5));
+      //objects.add(new EnemyBullet(x-50, y-50, -5, -5));
       
       cooldown = 0;
     }
@@ -30,12 +32,19 @@ void act() {
           lives--;
           obj.lives = 0;
           if (lives == 0) {
+            
             objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 20)));
+            
           objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 30)));
+          
           objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 30)));
+          
           objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 30)));
+          
           objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 30)));
+          
           objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 30)));
+          
           }
         }
       }

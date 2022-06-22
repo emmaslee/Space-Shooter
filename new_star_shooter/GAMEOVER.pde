@@ -1,5 +1,7 @@
 void gameover() {
-  background(0);
+  background(galaxy);
+   imageMode(CENTER);
+  
    textSize(80);
     fill(255);
     text("YOU LOSE", 180, 320);
@@ -10,10 +12,10 @@ void gameover() {
   if (mouseX > 300 && mouseX < 500 && mouseY > 350 && mouseY < 450) {
     fill(200);
   } else {
-    fill(146, 240, 140);
+    fill(#390910);
   }
   rect(400, 400, 200, 100);
-  fill(0);
+  fill(255);
   textSize(30);
   text("RETURN", 340, 410); 
 

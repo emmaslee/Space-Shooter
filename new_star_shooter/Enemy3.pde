@@ -18,9 +18,7 @@ class EnemyC extends GameObject {
       objects.add(new EnemyBullet(x-50, y+50, -5, 5));
       objects.add(new EnemyBullet(x+50, y-50, 5, -5));
       objects.add(new EnemyBullet(x-50, y-50, -5, -5));
- imageMode(CENTER);
-  image(selectedImage, x,y , thickness, thickness);
-  imageMode(CORNER);
+ 
   
       cooldown = 0;
     }
@@ -36,10 +34,15 @@ class EnemyC extends GameObject {
               
               
           objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 20)));
+          
           objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 20)));
+          
           objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 20)));
+          
           objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 20)));
+          
           objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 20)));
+          
           objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 20)));
           }
         }
@@ -49,5 +52,10 @@ class EnemyC extends GameObject {
     
     
     if (offScreen()) lives = 0;
+  }
+   void show() {
+     imageMode(CENTER);
+  image(greyship, x, y, 150, 150);
+  
   }
 }

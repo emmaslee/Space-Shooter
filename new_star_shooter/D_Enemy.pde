@@ -3,7 +3,7 @@ class EnemyD extends GameObject {
   float cooldown, threshold;
 
   EnemyD() {
-    super(-200, 250, 3, 3, 250, #fdca40, 20);
+    super(-200, 250, 3, 3, 250, dblue, 20);
     cooldown = 0;
     threshold = 100;
   }
@@ -32,11 +32,17 @@ class EnemyD extends GameObject {
           if (lives == 0) {
             
             objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 20)));
+            
             objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 30)));
+            
             objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 30)));
+            
             objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 30)));
+            
             objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 30)));
+            
             objects.add(new particleClass(x, y, random(-2, 2), random(-2, 2), random(10, 30)));
+            
             
           }
         }

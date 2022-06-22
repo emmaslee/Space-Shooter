@@ -3,9 +3,10 @@ class Enemy extends GameObject {
   int cooldown, threshold, bossspawn;
   
   Enemy() {
-    super(random(width), 0, 0, 3, 40, #fdca40, 1);
-     
-    threshold = 75;
+    super(random(width), 0, 0, 3, 40, dblue, 1);
+      threshold = 5;
+    cooldown = threshold;
+   //threshold = 75;
   }
   
   void act() {
@@ -46,7 +47,7 @@ class Enemy extends GameObject {
   }
   void show() {
      imageMode(CENTER);
-  image(bship, x, y, 100, 100);
+  image(pship, x, y, 100, 100);
   
   }
 }
